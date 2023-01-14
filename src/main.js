@@ -4,6 +4,11 @@ import { Button, Table, TableColumn, Input, Form, FormItem, Option, Dialog, Mess
 
 Vue.config.productionTip = false
 
+new Vue({
+  render: h => h(App),
+}).$mount('#App')
+
+
 Vue.use(Button)
 Vue.use(Input)
 Vue.use(Table)
@@ -15,7 +20,3 @@ Vue.use(Dialog)
 Vue.use(Popconfirm)
 Vue.use(Message)
 Vue.prototype.$message = Message
-
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
