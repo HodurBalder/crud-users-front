@@ -2,7 +2,7 @@ import axios from 'axios'
 
 export default()=> {
     return axios.create({
-        baseURL: 'http://localhost:8080',
+        baseURL: 'https://crud-users-back.vercel.app/',
         headers: {
             //'Accept': 'application/json',
             //'Content-Type': 'application/json',
