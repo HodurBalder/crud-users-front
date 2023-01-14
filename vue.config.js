@@ -6,6 +6,6 @@ module.exports = defineConfig({
     compress: true,
     disableHostCheck: true,
     },
-    publicPath: process.env.NODE_ENV === 'production'  ? '' : ''
+    publicPath: process.env.NODE_ENV === 'production'  ? '././' : './'
 })
 
