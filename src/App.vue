@@ -1,18 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+      <h1>Adrian Rodriguez Mejia</h1>
+      <h2>CRUD Factura Tech</h2>
+
+      <CrudUsers />
+      <footer>
+        <ExercisesTest />
+      </footer>
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    CrudUsers: () =>
+      import('./components/crud-users/index'),
+    ExercisesTest: () =>
+    import('./components/exercises/index'),
+  },
 }
 </script>
 
